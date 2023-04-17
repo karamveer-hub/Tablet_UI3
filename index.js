@@ -185,7 +185,7 @@ no_feedback_submit_button.addEventListener("click", (e) => {
         
     }
     setTimeout(() => {
-        window.location.href = 'thanku.html';
+//         window.location.href = 'thanku.html';
     }, 100);
     
 })
