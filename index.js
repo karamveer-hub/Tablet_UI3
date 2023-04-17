@@ -113,7 +113,7 @@ feedback_emoji.forEach(elem => {
 //submit button styling adding functionalty on user inputs
 
 user_info.forEach(elem => {
-console.log(elem);
+// console.log(elem);
     elem.addEventListener('keyup', (e) => {
         if (user_name.value != ' ' && user_number.value != ' ') {
             e.preventDefault()
