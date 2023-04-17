@@ -1,0 +1,169 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <Section class="wrapper form_page">
+        <section class="container display_flex_col form">
+            <div class="headingdiv">
+                <h1>Tell Us More</h1>
+            </div>
+
+
+
+            <div class="maindiv display_flex">
+
+
+                <div class=" inside_div " id="">
+                    <h2>A. How was your shopping experience?</h2>
+                    <div class="first_div display_flex">
+                        <picture>
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.webp" type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.gif" alt="😃" width="32" height="32">
+                          </picture>                        <picture>
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.webp" type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif" alt="🙂" width="32" height="32">
+                          </picture>
+                          <picture>
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.webp" type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif" alt="😐" width="32" height="32">
+                          </picture>                       
+                          <picture>
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.webp" type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif" alt="😔" width="32" height="32">
+                          </picture>                        
+                          <picture>
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.webp" type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif" alt="😞" width="32" height="32">
+                          </picture>        
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="maindiv display_flex">
+
+
+                <div class=" inside_div " id="">
+                    <h2>B. Did you get what you wanted?</h2>
+                    <div class="first_div display_flex">
+                        <div>
+                            <input type="radio"  id="formpage_wantyes" value="yes" name="wanted">
+                            <label for="formpage_wantyes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio"  id="formpage_wantno" value="no" name="wanted">
+                            <label for="formpage_wantno">No</label>
+                        </div>
+                    </div>
+                  
+
+                </div>
+                <div class=" inside_div " id="">
+                    <h2>C. Would you like us to contact you for feedback? </h2>
+                    <div class="first_div display_flex">
+                        <div>
+                            <input type="radio" class="feed_want" id="formfeed_wantyes" value="feed_yes" name="feedback_wanted">
+                            <label for="formfeed_wantyes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="feed_want" id="formfeed_wantno" value="feed_no" name="feedback_wanted">
+                            <label for="formfeed_wantno">No</label>
+                        </div>
+                    </div>
+                  
+
+                </div>
+
+
+               
+
+            </div>
+            <div class="maindiv display_flex form">
+
+
+                <div class=" inside_div " id="">
+                    <h2>D. Please enter your contact details</h2>
+                    <div class="first_div display_flex">
+                        <div class="display_flex">
+                            <input type="text" class="user_info"  id="user_name" value=" " placeholder="Enter Your Name">
+                            <input type="text"  class="user_info" id="user_number"  value=" " placeholder="Enter Your Contact Number">
+                        </div>
+                    </div>
+                    <div class=" buttonDiv display_flex">
+                        <button class="sbmbutton">Submit</button>
+                    </div>
+                  
+
+                </div>
+               
+
+
+               
+
+            </div>
+
+
+
+
+
+            </div>
+
+        
+        </section>
+
+        <section class="fixed_bar display_flex">
+            <img src="./images/Arrow 2.png" class="homeicons" alt="">
+            <img src="./images/homeicon.png" class="homeicons" alt="">
+            <img src="" alt="">
+        </section>
+    </Section>
+
+    <script>
+        let user_name=document.querySelector("#user_name")
+let user_number=document.querySelector("#user_number")
+let user_info=document.querySelectorAll(".user_info")
+let sbmbutton=document.querySelector(".sbmbutton")
+
+// sbmbutton.addEventListener("")
+
+user_info.forEach(elem=>{
+
+elem.addEventListener('keyup',()=>{
+    if(user_name.value !=' ' && user_number.value != ' '){
+
+        
+        sbmbutton.style.background=" linear-gradient(270deg, #447AEC 0%, #2A5CDC 100%"
+        sbmbutton.addEventListener('click',()=>{
+            console.log(user_name.value)
+            user_name.value == ' ' && user_number.value == ' '
+            window.location.href = 'thanku.html';
+            
+        })
+        
+    }
+    
+})
+})
+
+
+    </script>
+
+<script src="js/index.js"></script>
+
+
+</body>
+
+</html> -->

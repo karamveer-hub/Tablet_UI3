@@ -1,0 +1,701 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+}
+
+html {
+    font-family: 'poppinsregular';
+    height: 100%;
+
+}
+
+html::before {
+    display: none;
+}
+
+body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('poppins-regular-webfont.woff2') format('woff2'),
+        url('poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'noto_sans_tamilregular';
+    src: url('notosanstamil-variablefont_wdthwght-webfont.woff2') format('woff2'),
+        url('notosanstamil-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+
+/* Global */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.display_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display_flex_col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.outline_selected {
+    border: 2px solid #007dfc;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: #F5FBFC;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: calc(100% - 6%);
+    padding: calc(30/768 * 100vw) calc(44/768 * 100vw);
+}
+
+.inside_div {
+    min-width: 25%;
+}
+
+.price_font{
+    font-family: "noto_sans_tamilregular";
+}
+
+
+/* Hide show functionalty */
+
+.feedback_page_wrapper.show,
+.tellus_more_page.show {
+    display: block;
+}
+
+
+/* local */
+
+/* homepage */
+
+.homepage .inside_div img {
+    width: calc(176/768 * 100vw);
+}
+
+.inside_div img {
+    width: 100%;
+}
+
+.inside_div p {
+    width: 100%;
+    font-size: calc(20/768 * 100vw);
+    font-weight: 600;
+    line-height: calc(25/768 * 100vw);
+    letter-spacing: 0em;
+
+}
+
+
+.homepage .inside_div p {
+    min-height: calc(50/768 * 100vw);
+    font-size: calc(12/768 * 100vw);
+}
+
+
+.latestbuzz_page,
+.portfolio_page,
+.classic_portfolio,
+.goldflake_portfolio {
+    position: relative;
+}
+
+.latestbuzz_page .inside_div,
+.portfolio_page .inside_div,
+.feedback_page .inside_div,
+.classic_portfolio .inside_div,
+.goldflake_portfolio .inside_div,
+.tellus_more .inside_div,
+.submit .inside_div,
+.form .inside_div {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 47%;
+    min-height: calc(320/768 * 100vw);
+    height: auto;
+    background: #fff;
+    padding-bottom: calc(30/768 * 100vw);
+}
+
+.latestbuzz_page .headingdiv,
+.portfolio_page .headingdiv,
+.feedback_page .headingdiv,
+.tellus_more_page .headingdiv,
+.submit_page .headingdiv,
+.form_page .headingdiv {
+    margin-bottom: calc(10/768 * 100vw);
+}
+
+.latestbuzz_page .headingdiv h1,
+.portfolio_page .headingdiv h1,
+.feedback_page .headingdiv h1,
+.classic_portfolio .headingdiv h1,
+.goldflake_portfolio .headingdiv h1,
+.tellus_more_page .headingdiv h1,
+.submit_page .headingdiv h1,
+.form_page .headingdiv h1 {
+    text-align: left;
+    font-size: calc(12/768 * 100vw);
+    line-height: calc(45/1920 * 100vw);
+}
+
+.latestbuzz_page div,
+.portfolio_page div,
+.feedback_page div,
+.classic_portfolio div,
+.goldflake_portfolio div,
+.tellus_more_page div,
+.submit_page div,
+.form_page div {
+    width: 100%;
+}
+
+.latestbuzz_page .second_div {
+    padding: calc(0/768 * 100vw) calc(30/768 * 100vw);
+}
+
+.latestbuzz_page .third_div {
+    padding: calc(0/768 * 100vw) calc(30/768 * 100vw);
+}
+
+.latestbuzz_page .inside_div div p,
+.portfolio_page .inside_div div p,
+.feedback_page .inside_div div p,
+.classic_portfolio .inside_div div p,
+.goldflake_portfolio .inside_div div p,
+.tellus_more .inside_div div p,
+.submit .inside_div div p,
+.form .inside_div div p {
+    line-height: calc(26/768 * 100vw);
+    font-weight: 400;
+    width: auto;
+}
+
+.latestbuzz_page .inside_div .first_div {
+    height: 60% !important;
+    width: 100%;
+    padding: calc(0/768 * 100vw) calc(20/768 * 100vw);
+}
+
+.latestbuzz_page .first_div img,
+.classic_portfolio .first_div img,
+.goldflake_portfolio .first_div img {
+    height: 100% !important;
+    width: 100% !important;
+
+}
+
+.latestbuzz_page .inside_div h2,
+.portfolio_page .inside_div h2,
+.feedback_page .inside_div h2,
+.classic_portfolio .inside_div h2,
+.goldflake_portfolio .inside_div h2,
+.tellus_more .inside_div h2,
+.submit .inside_div h2,
+.form .inside_div h2 {
+    font-size: calc(20/768 * 100vw);
+    line-height: calc(26/768 * 100vw);
+    font-weight: 400;
+}
+
+.latestbuzz_page .inside_div>.third_div p {
+    font-size: calc(12/768 * 100vw);
+    text-align: left;
+}
+
+.latestbuzz_page .inside_div>.third_div img {
+    width: calc(100.6/768 * 100vw);
+}
+
+
+
+
+
+/* portfolio page */
+
+.portfolio_page .maindiv:nth-child(4) .inside_div {
+    margin-right: 0 !important;
+}
+
+.portfolio_page .inside_div:nth-child(1),
+.portfolio_page .inside_div:nth-child(2) {
+    height: 100% !important;
+    padding-bottom: 0;
+}
+
+.portfolio_page .inside_div:nth-child(1) .first_div,
+.portfolio_page .inside_div:nth-child(2) .first_div {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.portfolio_page .inside_div:nth-child(1) .first_div img,
+.portfolio_page .inside_div:nth-child(2) .first_div img {
+    height: 100% !important;
+    border-radius: 4px;
+}
+
+.feedback_page_wrapper {
+    display: none;
+}
+
+.feedback_page.container {
+    height: calc(100vh - 32px) !important;
+    border-radius: 20px;
+    justify-content: flex-start;
+}
+
+.feedback_page {
+    padding: calc(33.3/768 * 100vw) calc(40/768 * 100vw);
+}
+
+.feedback_page .maindiv {
+    background: #fff;
+    padding: calc(20/768 * 100vw) calc(22/768 * 100vw);
+    align-items: unset;
+}
+
+.feedback_page .maindiv .inside_div:nth-child(2) {
+    position: relative;
+}
+
+.feedback_page .inside_div .first_div.display_flex {
+    justify-content: center;
+}
+
+.feedback_page .inside_div {
+    background: none;
+    box-shadow: none;
+    padding-bottom: 0;
+    justify-content: flex-start;
+}
+
+.feedback_page .inside_div h2 {
+    font-size: calc(12/768 * 100vw);
+    margin-bottom: 10px;
+}
+
+.feedback_page .maindiv .inside_div .first_div img {
+    width: calc(56/768 * 100vw);
+    height: calc(56/768 * 100vw);
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin: calc(6/768 * 100vw);
+    object-fit: contain;
+}
+
+.feedback_page .maindiv {
+    border-radius: 20px;
+}
+
+.feedback_page .inside_div:nth-child(2) .first_div {
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: calc(340/900 * 100vw);
+    position: absolute;
+    top: 16%;
+}
+
+.feedback_page .inside_div:nth-child(2) .first_div img {
+    width: calc(76/768 * 100vw);
+    height: calc(76/768 * 100vw);
+    box-shadow: none;
+    margin: calc(10/768 * 100vw);
+}
+
+
+/* .classic_portfolio */
+
+.classic_portfolio .maindiv:nth-child(4) .inside_div:nth-child(2) {
+    margin-right: 0;
+}
+
+.classic_portfolio.container,
+.goldflake_portfolio.container,
+.tellus_more.containers,
+.submit.containers {
+    height: auto;
+    padding: 0 calc(44/768 * 100vw) calc(30/768 * 100vw) calc(44/768 * 100vw);
+}
+
+.classic_portfolio .inside_div,
+.goldflake_portfolio .inside_div,
+.tellus_more .inside_div,
+.submit .inside_div,
+.form .inside_div {
+    min-width: 200px;
+    width: 45%;
+    min-height: calc(162.8/900 * 100vw);
+    height: auto;
+    padding: calc(10/768 * 100vw);
+    margin-bottom: calc(31.8/768 * 100vw);
+    ;
+}
+
+.classic_portfolio .inside_div,
+.goldflake_portfolio .inside_div {
+
+    height: calc(139/768 * 100vw);
+    margin-bottom: calc(40/768 * 100vw);
+
+}
+
+.tellus_more .maindiv:nth-of-type(3) .inside_div,
+.submit .inside_div:nth-child(2),
+.form .inside_div:nth-child(2) {
+    height: calc(105.6/900 * 100vw);
+}
+
+.wrapper.classic_portfolio_page .headingdiv,
+.wrapper.goldflake_page .headingdiv {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: calc(30/768 * 100vw) calc(44/768 * 100vw);
+    height: 50px;
+    background: #F5FBFC;
+    align-items: unset;
+}
+
+.classic_portfolio_page .headingdiv h1,
+.goldflake_page .headingdiv h1 {
+    text-align: left;
+    font-size: calc(12/768 * 100vw);
+    line-height: calc(45/768 * 100vw);
+}
+
+.classic_portfolio .inside_div .first_div,
+.goldflake_portfolio .inside_div .first_div,
+.tellus_more .inside_div .first_div,
+.submit .inside_div .first_div,
+.form .inside_div .first_div {
+    padding: 0;
+    height: 70%;
+}
+
+.classic_portfolio .inside_div .first_div img,
+.goldflake_portfolio .inside_div .first_div img {
+    max-width: calc(180/768 * 100vw);
+    display: block;
+    margin: 0 auto;
+}
+
+.classic_portfolio .inside_div:nth-child(2) {
+    margin: 0 calc(40/768 * 100vw) calc(40/768 * 100vw) calc(40/768 * 100vw);
+}
+
+.classic_portfolio .inside_div .second_div,
+.goldflake_portfolio .inside_div .second_div,
+.tellus_more .inside_div .second_div,
+.submit .inside_div .second_div,
+.form .inside_div .second_div {
+    padding: 0 14px 0 14px;
+}
+
+.classic_portfolio .inside_div h2,
+.goldflake_portfolio .inside_div h2,
+.tellus_more .inside_div h2,
+.submit .inside_div h2,
+.form .inside_div h2 {
+    line-height: 18px;
+}
+
+.classic_portfolio .inside_div div p,
+.goldflake_portfolio .inside_div div p,
+.tellus_more .inside_div div p,
+.submit .inside_div div p,
+.form .inside_div div p {
+    line-height: 14.8px;
+}
+
+.classic_portfolio .inside_div h2,
+.classic_portfolio .inside_div p,
+.goldflake_portfolio .inside_div h2,
+.goldflake_portfolio .inside_div p,
+.tellus_more .inside_div h2,
+.tellus_more .inside_div p,
+.submit .inside_div h2,
+.submit .inside_div p,
+.form .inside_div h2,
+.form .inside_div p {
+    min-height: 0;
+    font-size: calc(12/768 * 100vw);
+}
+
+.moreitemsarrow {
+    position: fixed;
+    bottom: 6%;
+    z-index: 99;
+    padding: 0 calc(40/768 * 100vw);
+    height: calc(20/768 * 100vw);
+    background: #F5FBFC;
+    justify-content: center;
+    width: 100%;
+}
+
+.moreitemsarrow img {
+    width: calc(32/768 * 100vw);
+    margin-left: calc(20/768 * 100vw);
+}
+
+
+
+/* gold flake */
+.goldflake_portfolio {
+    justify-content: center;
+}
+
+
+/* tell us more */
+.tellus_more_page {
+    display: none;
+}
+
+.tellus_more,
+.submit,
+.form {
+    justify-content: flex-start;
+}
+
+.tellus_more.container,
+.submit.container,
+.form.container {
+    padding: calc(33.3/768 * 100vw) calc(40/768 * 100vw);
+    height: calc(100% - 32px);
+}
+
+.tellus_more .inside_div,
+.form .inside_div {
+    padding: calc(41.6/768 * 100vw) calc(20/900 * 100vw);
+    width: 100%;
+}
+
+.submit .inside_div {
+    padding: calc(32/768 * 100vw) calc(20/900 * 100vw);
+}
+
+.tellus_more .inside_div:nth-child(2),
+.submit .inside_div:nth-child(2),
+.form .inside_div:nth-child(2) {
+    margin: 0 0px calc(31.8/768 * 100vw) 20px;
+}
+
+.tellus_more .inside_div .first_div,
+.submit .inside_div .first_div {
+    padding: calc(4/768 * 100vw) calc(50/768 * 100vw);
+    ;
+}
+
+.form .maindiv:nth-of-type(3) .first_div div input,
+.tellus_more .maindiv:nth-of-type(3) .first_div div input,
+.submit .maindiv:nth-of-type(3) .first_div div input {
+
+    height: calc(24/768 * 100vw);
+    vertical-align: middle;
+    width: calc(24/768 * 100vw);
+    margin-right: 5px;
+
+}
+
+.form .maindiv:nth-of-type(3) .first_div div label,
+.tellus_more .maindiv:nth-of-type(3) .first_div div label,
+.submit .maindiv:nth-of-type(3) .first_div div label {
+    font-size: calc(16/900 * 100vw);
+}
+
+.tellus_more .inside_div .first_div img,
+.submit .inside_div .first_div img,
+.form .inside_div .first_div img {
+    height: calc(82/900 * 100vw);
+    width: calc(82/900 * 100vw);
+}
+
+.tellus_more .inside_div h2,
+.submit .inside_div h2,
+.form .inside_div h2 {
+    text-align: left !important;
+    line-height: calc(18/768 * 100vw);
+}
+
+
+
+.submit .inside_div,
+.form .inside_div {
+    margin-bottom: calc(22/768 * 100vw) !important;
+    width: 100% !important;
+}
+
+.submit .maindiv:nth-of-type(3) .inside_div
+    {
+    min-height: calc(130/900 * 100vw);
+    height: calc(140/900 * 100vw);
+}
+
+.submit .maindiv:nth-of-type(3) .inside_div .first_div,
+.form .maindiv:nth-of-type(3) .inside_div .first_div {
+    padding: calc(4/768 * 100vw) calc(40/768 * 100vw);
+}
+
+.submit .buttonDiv,
+.form .buttonDiv {
+    padding: 0 20px;
+}
+
+.sbmbutton {
+    background: linear-gradient(270deg, #447AEC 0%, #2A5CDC 100%);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    padding: calc(4/768 * 100vw);
+    font-weight: 600;
+    font-size: calc(12/768 * 100vw);
+    line-height: calc(18/768 * 100vw);
+}
+
+
+.form .maindiv:nth-of-type(4) .first_div div input {
+    background: #F5FBFC;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: calc(4/768 * 100vw) calc(20/768 * 100vw);
+    background: #F5FBFC;
+    box-shadow: 0px 0px 20px 0px #0000001A inset;
+    font-size: calc(12/768 * 100vw);
+
+}
+
+.form .maindiv:nth-of-type(4) .first_div div input::placeholder {
+    color: white;
+}
+
+.contactDetails,
+#no_feedback_submit {
+    display: none;
+}
+
+.form .inside_div .first_div input::placeholder {
+    color: #000000 50%;
+}
+
+.form .inside_div {
+    padding: calc(18.9/900 * 100vw) calc(20/900 * 100vw);
+    margin-bottom: calc(10/900 * 100vw) !important;
+}
+
+.form .maindiv:nth-of-type(3) .inside_div,
+.tellus_more .maindiv:nth-of-type(3) .inside_div {
+    padding: calc(17/900 * 100vw) calc(10/900 * 100vw) calc(17/900 * 100vw) calc(17/900 * 100vw);
+}
+
+.form .maindiv:nth-of-type(4) .inside_div {
+    justify-content: space-between;
+}
+
+.form .maindiv:nth-of-type(4) .inside_div .first_div {
+    padding: calc(11.3/900 * 100vw) 0;
+    height: 45%;
+}
+
+.form .maindiv:nth-of-type(4) .inside_div .first_div input {
+    width: 45%;
+}
+
+.form .buttonDiv {
+    padding: 0;
+}
+
+.form .buttonDiv .sbmbutton {
+    background: #B3B3B3;
+}
+
+.form .maindiv:nth-of-type(2) .inside_div {
+    min-height: calc(144.6/900 * 100vw);
+    height: auto;
+}
+
+.form .inside_div .first_div {
+    padding: calc(4/900 * 100vw) calc(40/900 * 100vw);
+}
+
+.form .maindiv:nth-of-type(3) .inside_div {
+    min-height: calc(107.6/900 * 100vw);
+}
+
+.submit .maindiv:nth-of-type(3) .inside_div {
+    min-height: calc(147.6/900 * 100vw);
+    padding: calc(26.6/768 * 100vw) calc(10/900 * 100vw) calc(26.6/768 * 100vw) calc(17/900 * 100vw);
+}
+
+.form .maindiv:nth-of-type(4) .inside_div {
+    min-height: calc(117.6/900 * 100vw);
+    height: auto;
+
+}
+
+
+.fixed_bar {
+    position: fixed;
+    height: 6%;
+    width: 100vw;
+    bottom: 0;
+    border-radius: 0px;
+    padding: 10px 40px 10px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.homeicons {
+    width: calc(20/768 * 100vw);
+}
+
+.thanku {
+    justify-content: center;
+}
+
+.thanku h1 {
+    font-size: calc(12/768 * 100vw);
+}
