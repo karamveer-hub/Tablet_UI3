@@ -21,6 +21,8 @@ let feedback_emoji = document.querySelectorAll(".feedback_redirect")
 let feeback_img_outline = document.querySelectorAll(".feeback_img_outline")
 let ciagrette_feedback_name = document.querySelector("#ciagrette_feedback_name")
 
+let user_name_data=document.querySelector("#user_name")
+let user_number_data=document.querySelector("#user_number")
 
 //declaring variable for storing user data
 let user_feed;
@@ -111,7 +113,7 @@ feedback_emoji.forEach(elem => {
 //submit button styling adding functionalty on user inputs
 
 user_info.forEach(elem => {
-// console.log(elem);
+console.log(elem);
     elem.addEventListener('keyup', (e) => {
         if (user_name.value != ' ' && user_number.value != ' ') {
             e.preventDefault()
@@ -185,7 +187,7 @@ no_feedback_submit_button.addEventListener("click", (e) => {
         
     }
     setTimeout(() => {
-//         window.location.href = 'thanku.html';
+        window.location.href = 'thanku.html';
     }, 100);
     
 })
@@ -195,25 +197,25 @@ no_feedback_submit_button.addEventListener("click", (e) => {
 
 
 //Connecting supabase to the project
-const sb = supabase.createClient('https://qopwvyhgswjzhujqqbfa.supabase.co', 
-'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvcHd2eWhnc3dqemh1anFxYmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODEzNzUxODksImV4cCI6MTk5Njk1MTE4OX0.kksfMR19xFb5CZkYw9MOb8tFF8p3UE5uAtIPGgT2t4g')
+// const sb = supabase.createClient('https://qopwvyhgswjzhujqqbfa.supabase.co', 
+// 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvcHd2eWhnc3dqemh1anFxYmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODEzNzUxODksImV4cCI6MTk5Njk1MTE4OX0.kksfMR19xFb5CZkYw9MOb8tFF8p3UE5uAtIPGgT2t4g')
 
 
 //storing data into the database
-async function getData() {
+// async function getData() {
 //     console.log(feeback_page_emoji,user_ciagrette_name,user_did_u_get,user_feed,user_shopping_experience)
-    const { data, error } = await sb
-        .from('users_feedback')
-        .insert(
-            {
-                ciagrette_name: user_ciagrette_name,
-                ciagrette_feedback: feeback_page_emoji,
-                customer_number: user_number_data.value,
-                did_you_get_what_u_wanted: user_did_u_get,
-                customer_name: user_name_data.value,
-                get_in_touch: user_feed,
-                shopping_exp: user_shopping_experience
-            }
-        )
+//     const { data, error } = await sb
+//         .from('users_feedback')
+//         .insert(
+//             {
+//                 ciagrette_name: user_ciagrette_name,
+//                 ciagrette_feedback: feeback_page_emoji,
+//                 customer_number: user_number_data.value,
+//                 did_you_get_what_u_wanted: user_did_u_get,
+//                 customer_name: user_name_data.value,
+//                 get_in_touch: user_feed,
+//                 shopping_exp: user_shopping_experience
+//             }
+//         )
    
-}
+// }
