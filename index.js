@@ -111,7 +111,7 @@ feedback_emoji.forEach(elem => {
 //submit button styling adding functionalty on user inputs
 
 user_info.forEach(elem => {
-console.log(elem);
+// console.log(elem);
     elem.addEventListener('keyup', (e) => {
         if (user_name.value != ' ' && user_number.value != ' ') {
             e.preventDefault()
@@ -201,7 +201,7 @@ const sb = supabase.createClient('https://qopwvyhgswjzhujqqbfa.supabase.co',
 
 //storing data into the database
 async function getData() {
-    console.log(feeback_page_emoji,user_ciagrette_name,user_did_u_get,user_feed,user_shopping_experience)
+//     console.log(feeback_page_emoji,user_ciagrette_name,user_did_u_get,user_feed,user_shopping_experience)
     const { data, error } = await sb
         .from('users_feedback')
         .insert(
