@@ -63,7 +63,7 @@ feeback_img_outline.forEach(elem => {
 //adding styling on clicking of radio button by the user for submit button and form inputs (adding styling is due to these classes)
 feed_yes.forEach(elem => {
     elem.addEventListener("click", (e) => {
-        if (elem.value === 'feed_yes') {
+        if (elem.value === 'yes') {
             tellus_more_page.classList.add("form_page")
             tellus_more.classList.add("form")
             tellus_more_page.classList.remove("submit_page")
