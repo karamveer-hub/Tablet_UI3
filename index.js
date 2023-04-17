@@ -196,26 +196,26 @@ no_feedback_submit_button.addEventListener("click", (e) => {
 
 
 
-//Connecting supabase to the project
-// const sb = supabase.createClient('https://qopwvyhgswjzhujqqbfa.supabase.co', 
-// 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvcHd2eWhnc3dqemh1anFxYmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODEzNzUxODksImV4cCI6MTk5Njk1MTE4OX0.kksfMR19xFb5CZkYw9MOb8tFF8p3UE5uAtIPGgT2t4g')
+Connecting supabase to the project
+const sb = supabase.createClient('https://qopwvyhgswjzhujqqbfa.supabase.co', 
+'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvcHd2eWhnc3dqemh1anFxYmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODEzNzUxODksImV4cCI6MTk5Njk1MTE4OX0.kksfMR19xFb5CZkYw9MOb8tFF8p3UE5uAtIPGgT2t4g')
 
 
-//storing data into the database
-// async function getData() {
-//     console.log(feeback_page_emoji,user_ciagrette_name,user_did_u_get,user_feed,user_shopping_experience)
-//     const { data, error } = await sb
-//         .from('users_feedback')
-//         .insert(
-//             {
-//                 ciagrette_name: user_ciagrette_name,
-//                 ciagrette_feedback: feeback_page_emoji,
-//                 customer_number: user_number_data.value,
-//                 did_you_get_what_u_wanted: user_did_u_get,
-//                 customer_name: user_name_data.value,
-//                 get_in_touch: user_feed,
-//                 shopping_exp: user_shopping_experience
-//             }
-//         )
+storing data into the database
+async function getData() {
+    console.log(feeback_page_emoji,user_ciagrette_name,user_did_u_get,user_feed,user_shopping_experience)
+    const { data, error } = await sb
+        .from('users_feedback')
+        .insert(
+            {
+                ciagrette_name: user_ciagrette_name,
+                ciagrette_feedback: feeback_page_emoji,
+                customer_number: user_number_data.value,
+                did_you_get_what_u_wanted: user_did_u_get,
+                customer_name: user_name_data.value,
+                get_in_touch: user_feed,
+                shopping_exp: user_shopping_experience
+            }
+        )
    
-// }
+}
