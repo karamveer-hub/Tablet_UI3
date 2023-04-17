@@ -201,7 +201,7 @@ const sb = supabase.createClient('https://qopwvyhgswjzhujqqbfa.supabase.co',
 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvcHd2eWhnc3dqemh1anFxYmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODEzNzUxODksImV4cCI6MTk5Njk1MTE4OX0.kksfMR19xFb5CZkYw9MOb8tFF8p3UE5uAtIPGgT2t4g')
 
 
-storing data into the database
+// storing data into the database
 async function getData() {
     console.log(feeback_page_emoji,user_ciagrette_name,user_did_u_get,user_feed,user_shopping_experience)
     const { data, error } = await sb
