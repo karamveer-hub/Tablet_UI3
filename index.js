@@ -90,14 +90,14 @@ feed_yes.forEach(elem => {
 // getting customer info by clicking
 shopping_experience.forEach(elem => {
     elem.addEventListener("click", (e) => {
-        user_shopping_experience = elem.children[1].alt;
+        user_shopping_experience = elem.children[0].alt;
     })
 })
 
 
 feedback_emoji.forEach(elem => {
     elem.addEventListener("click", (e) => {
-        feeback_page_emoji = elem.children[1].alt
+        feeback_page_emoji = elem.children[0].alt
         feedback_page_hide.classList.toggle("show")        //merging feedback and tellus_more_page as we were not getting data from the previous feedback page after submit
         tellus_more_page.classList.toggle("show")
     })
