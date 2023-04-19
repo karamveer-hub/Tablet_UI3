@@ -213,24 +213,42 @@
             </div>
         </section>
 
+    </Section>
 
-
-        <section class="fixed_bar display_flex">
+         <section class="fixed_bar display_flex">
             <img src="Arrow 2.png" class="homeicons" alt="">
             <img src="homeicon.png" class="homeicons" alt="">
             <img src="" alt="">
         </section>
-    </Section>
 
 
+    <script>
 
 
+        let localback = document.querySelector(".fixed_bar ").children[0]
+        let home = document.querySelector(".fixed_bar ").children[1]
 
+        localback.addEventListener("click", () => {
+            if (tellus_more_page.classList.contains("show")) {
+                tellus_more_page.classList.remove("show")
+                feedback_page_hide.classList.add("show")       //getting back to the previous section if the second section is displayed
+            }
+            else {
+                history.go(-1)                                 //getting back to the previous page if the first section is displayed
+            }
+        })
+
+        home.addEventListener("click", () => {
+            window.location.href = 'index.html';
+        })
+
+
+    </script>
 
 
 
     <script src="index.js"></script>
-    <script src="fixedbar.js"></script>
+   
 
 </body>
 
