@@ -115,7 +115,7 @@ feedback_emoji.forEach(elem => {
 user_info.forEach(elem => {
 // console.log(elem);
     elem.addEventListener('keyup', (e) => {
-        if (user_name.value != ' ' && user_number.value != ' ') {
+        if (user_name_data.value != ' ' && user_number_data.value != ' ') {
             e.preventDefault()
             sbmbutton.style.background = " linear-gradient(270deg, #447AEC 0%, #2A5CDC 100%"
         }
@@ -130,7 +130,6 @@ user_info.forEach(elem => {
 
 sbmbutton.addEventListener('click', (e) => {
     e.preventDefault()
-    user_name.value == ' ' && user_number.value == ' '
     for (const radioButton of radioButtons) {
         if (radioButton.checked) {
             user_did_u_get = radioButton.value;
@@ -145,7 +144,9 @@ sbmbutton.addEventListener('click', (e) => {
     }
     getData()                     //transfering data to database
     
-    //unchecking radio buttons
+    //unchecking radio buttons and empty user inputs
+    user_name_data.value = ' ' 
+    user_number_data.value = ' '
     for (const radioButton of radioButtons) {
         radioButton.checked=false
     }
@@ -163,7 +164,6 @@ sbmbutton.addEventListener('click', (e) => {
 
 no_feedback_submit_button.addEventListener("click", (e) => {
     e.preventDefault()
-    user_name.value == ' ' && user_number.value == ' '
     for (const radioButton of radioButtons) {
         if (radioButton.checked) {
             user_did_u_get = radioButton.value;
@@ -178,7 +178,9 @@ no_feedback_submit_button.addEventListener("click", (e) => {
     }
     getData()                      //transfering data to database
     
-    //unchecking radio buttons
+    //unchecking radio buttons and empty user inputs
+    user_name_data.value = ' ' 
+    user_number_data.value = ' '
     for (const radioButton of radioButtons) {
         radioButton.checked=false
     }
